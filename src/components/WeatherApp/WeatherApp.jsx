@@ -30,8 +30,10 @@ const WeatherApp = () => {
 
         humidity[0].innerHTML = data.main.humidity+" %";
         wind[0].innerHTML = data.wind.speed+" km/h";
-        temperature[0].innerHTML = data.main.temp+"°c";
+        temperature[0].innerHTML = parseInt( data.main.temp)+"°c";
         location[0].innerHTML = data.name;
+        let icon = document.getElementsByClassName("icon");
+        
     }
 
   return (
